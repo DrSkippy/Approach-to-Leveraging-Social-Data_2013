@@ -23,6 +23,7 @@
 \usepackage{tikz}
 
 \begin{document}
+
 \title{Data Scientist's Approach to Social Data}
 \author{Scott Hendrickson \\ Principal Data Scientist, Gnip \\  @DrSkippy27}
 \date{\today} 
@@ -35,32 +36,37 @@
 
 %%%%%%%%
 \section{Social Data}
+{
+\usebackgroundtemplate{\includegraphics[width=4cm]{./imgs/ink.jpg}}
+\begin{frame}
+\textcolor{black} {
+\hfill \Huge \insertsection}
+\end{frame}
+}
 
-\begin{frame}\frametitle{Social Data}
+\begin{frame}\frametitle{Social data}
 \begin{center}
 {\Huge created by \\ [8pt] interactions \\ [15pt] among people}
 \end{center}
 \end{frame}
 
-\begin{frame}\frametitle{Social Data}
+\begin{frame}\frametitle{Social data}
 \begin{center}
-{\Huge form and content \\ [8pt] shaped by \\ [15pt] people}
+{\Huge form and content \\ [8pt] shaped by \\ [15pt] people's behavior}
 \end{center}
 \end{frame}
 
-\begin{frame}\frametitle{Sources of Social Data}
+\begin{frame}\frametitle{Sources}
 {\Huge
 \begin{itemize}
-\item Firehoses
+\item firehoses
 \item APIs
-\item Scraping
+\item scraping
 \end{itemize}
 }
 \end{frame}
 
 % Firehoses
-
-\subsection{Firehose}
 
 \begin{frame}\frametitle{Firehose}
 \begin{center}
@@ -70,9 +76,9 @@
 
 % Activity 
 
-\begin{frame}\frametitle{Social Data Activity}
+\begin{frame}\frametitle{Activity}
 \begin{center}
-{\Huge People interact \\ [8pt] on social media platform}
+{\Huge people interacting \\ [8pt] on social media platform}
 \end{center}
 \end{frame}
 
@@ -98,16 +104,39 @@
 \end{frame}
 
 %
-
-\begin{frame}\frametitle{Daily @Gnip}
+\begin{frame}\frametitle{Every day @Gnip}
 \begin{center}
 {\Huge $\frac{3}{4}$ Billion IN \\ [18pt] 4 Billion OUT}
 \end{center}
 \end{frame}
 
+%%%%%%%%
+\section{Analysis}
+{
+\usebackgroundtemplate{\includegraphics[width=4.5cm]{./imgs/ink.jpg}}
+\begin{frame}
+\textcolor{black} {
+\hfill \Huge \insertsection}
+\end{frame}
+}
+
+% Feels like this
+\begin{frame}
+  \begin{center}
+    \includegraphics[height=9cm]{./imgs/sinkfail.png}
+  \end{center}
+\end{frame}
+
+% Reality is a little more ironic
+\begin{frame}
+  \begin{center}
+    \includegraphics[height=11cm]{./imgs/flooding.png}
+  \end{center}
+\end{frame}
+
 % Source considerations
 
-\begin{frame}\frametitle{Analysis Considerations}
+\begin{frame}\frametitle{Analysis considerations}
 {\Large
 \begin{itemize}
 \item Technology - interfaces, tools, infrastructure for accessing
@@ -121,7 +150,7 @@
 
 % Source considerations
 
-\begin{frame}\frametitle{Business Considerations}
+\begin{frame}\frametitle{Business considerations}
 {\Large
 \begin{itemize}
 \item Licensing - do you have the right to analyze, display, store data?
@@ -133,19 +162,19 @@
 \end{frame}
 
 
-%%%%%%%%
-\section{Analysis}
 
 % what are we doing?
 
 % models drive analysis ; analysis drives model picture
 
-\begin{frame}\frametitle{Models}
+\begin{frame}\frametitle{Models \ldots}
+{\Large
 \begin{itemize}
-\item Model domain - timeseries, language analysis, network structures
-\item Model domain drives storage/access strategy - test files, spreadsheets, relational dbs, no-sql dbs...
-\item Analysis - dashboard vs. discovery projects
+\item domains - events, time series, language analysis, graph structures, etc.
+\item drives storage, analysis and access strategies
+\item analysis objectives - detection, alerting, status dashboard, discovery projects, validation, etc.
 \end{itemize}
+}
 \end{frame}
 
 % mind graph goes here!!!
@@ -156,23 +185,66 @@
 %%
 %%%%%%%%
 
+%%%%%%%%
+\section{Audience}
+{
+\usebackgroundtemplate{\includegraphics[width=5cm]{./imgs/ink.jpg}}
+\begin{frame}
+\textcolor{black} {
+\hfill \Huge \insertsection}
+\end{frame}
+}
+
+% toyota
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=8cm]{./imgs/TOY_bars.pdf}
+  \end{center}
+\end{frame}
+
+% thanksgiving day
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=10cm]{./imgs/t-day2012.png}
+  \end{center}
+\end{frame}
+
+% thanksgiving day
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=10cm]{./imgs/t-dayvsx-mas.png}
+  \end{center}
+\end{frame}
+
+% thanksgiving day
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=10cm]{./imgs/pies2012.png}
+  \end{center}
+\end{frame}
 
 %%%%%%%%
-\section{Time series - Social medial pulse}
+\section{Social Medial Pulse}
+{
+\usebackgroundtemplate{\includegraphics[width=5.5cm]{./imgs/ink.jpg}}
+\begin{frame}
+\textcolor{black} {
+\hfill \Huge \insertsection}
+\end{frame}
+}
 
 % social media pulse
 
-\section{Social media pulse}
 
-% find dates, names
+% hurricane Irene
 
-\begin{frame}\frametitle{Expected: Hurricane}
+\begin{frame}\frametitle{Expected: hurricane}
   \begin{center}
     \includegraphics[width=11cm]{./imgs/SMP_hurricane.pdf}
   \end{center}
 \end{frame}
 
-\begin{frame}\frametitle{Unexpected: Earthquake}
+\begin{frame}\frametitle{Unexpected: earthquake}
   \begin{center}
     \includegraphics[width=11cm]{./imgs/SMP_va_quake.pdf}
   \end{center}
@@ -181,20 +253,20 @@
 
 % Events
 
-\begin{frame}\frametitle{Classifying Events}
+\begin{frame}\frametitle{Classifying events}
 \begin{table}
 \begin{tabular}{ m{2cm} | m{ 2.5cm} | m{4cm}}
 \hline
 Type & Response & Examples \\ \hline
-Expected    & Approx. \newline Symmetric & Hurricane Sandy \newline Olympics \\ \hline
+Expected    &  Build-up/Decay & Hurricane Sandy \newline Olympics \\ \hline
 Unexpected (many obs.) & Social Media \newline Pulse & Beyonc\'{e} VMAs \newline  Mexico earthquake \newline  Steve Jobs \\ \hline
-Unexpected  (network spread) \newline Models & Osama bin Laden \newline  Whitney Houston \newline  Syrian dissidents \\ \hline
+Unexpected  (network spread) & Network \newline Models  & Osama bin Laden \newline  Whitney Houston \newline  Syrian dissidents \\ \hline
 \end{tabular}
 \end{table}
 \end{frame}
 
 
-\begin{frame}\frametitle{Expected: Hurricane}
+\begin{frame}\frametitle{Expected: hurricane}
   \begin{center}
     \includegraphics[width=11cm]{./imgs/SMP_hurricane_trend.pdf}
   \end{center}
@@ -202,6 +274,12 @@ Unexpected  (network spread) \newline Models & Osama bin Laden \newline  Whitney
 
 
 % half life
+
+\begin{frame}\frametitle{Unexpected: earthquake}
+  \begin{center}
+    \includegraphics[width=11cm]{./imgs/SMP_va_quake.pdf}
+  \end{center}
+\end{frame}
 
 \begin{frame}\frametitle{Half-life}
 \begin{center}
@@ -211,15 +289,19 @@ Unexpected  (network spread) \newline Models & Osama bin Laden \newline  Whitney
 
 \begin{frame}
 \frametitle{Social media pulse} 
-Given an event, the probability of a activity from one person,
+Given an event, the probability of an activity from one person,
 
 \begin{equation*}
 f(t) = \lambda \exp(-\lambda t), \text{ for } t \geq 0.
 \end{equation*}
 
-Many people posting, so sum of random variables $S = X_1 + X_2 + \ldots + X_{n \text{ posters}}$.
+Many people posting on same cue; so sum of random variables 
 
-Probability distribution function,
+\begin{equation*}
+S = X_1 + X_2 + \ldots + X_{n \text{ posters}}
+\end{equation*}
+
+Gamma probability distribution function,
 
 \begin{equation*}
 f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\alpha)}
@@ -241,15 +323,13 @@ F_S(t) = Q(\alpha, 0, \frac{ t}{\beta})
 \end{frame}
 
 \begin{frame}\frametitle{Why model half-life?}
-\begin{center}
+{\Large
 \begin{itemize}
-\Huge{
 \item predict total story volume
 \item compare half-lives
 \item anomalous story evolution
-}
 \end{itemize}
-\end{center}
+}
 \end{frame}
 
 \begin{frame}
@@ -260,166 +340,82 @@ F_S(t) = Q(\alpha, 0, \frac{ t}{\beta})
 
 % JPMorgan
 
+\begin{frame}\frametitle{JPMorgan (-\$2B)}
+ \hfill \includegraphics[height=8.0cm]{./imgs/SMP_JPMorgan.pdf}
+\end{frame}
+
+
+%%%%%%%%
+\section{Structure}
+{
+\usebackgroundtemplate{\includegraphics[width=6cm]{./imgs/ink.jpg}}
 \begin{frame}
-  \begin{center}
-    \includegraphics[height=8.5cm]{./imgs/SMP_JPMorgan.pdf}
-  \end{center}
+\textcolor{black} {
+\hfill \Huge \insertsection}
 \end{frame}
+}
 
-
-%%%%%%%%
-\section{Synthesis - Isreal and Hamas in Gaza}
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-all-daily.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-target-geo.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-leadup-pres-debate.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-media.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-media.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-followers.pdf}
-  \end{center}
-\end{frame}
-
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-venns6.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Comments with key words over time}
-  \begin{center}
-    \includegraphics[width=9.5cm]{./imgs/HI_minimal-venns8.pdf}
-  \end{center}
-\end{frame}
-
-
-
-%%%%%%%%
-\section{Engagement is the Message}
-
-%%%%%%%%
-\section{Structure - Comments, Retweets, Replogs}
-
-%%%%%%%%
-\section{Self Selecting Audiences - Toyota}
-
-% toyota
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{./imgs/reblog_network.png}}
 \begin{frame}
-  \begin{center}
-    \includegraphics[width=8cm]{./imgs/TOY_bars.pdf}
-  \end{center}
+\textcolor{black} {
+\vfill \hfill \Large Tumblr reblog network}
 \end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{./imgs/disqus_threads.png}}
+\begin{frame}
+\textcolor{black} {
+\vfill \hfill \Large Disqus discussion threads}
+\end{frame}
+}
 
 %%%%%%%%
-\section{Structure and Language - Topic Modeling}
+\section{Structure and Language}
+{
+\usebackgroundtemplate{\includegraphics[width=6.5cm]{./imgs/ink.jpg}}
+\begin{frame}
+\textcolor{black} {
+\hfill \Huge \insertsection}
+\end{frame}
+}
 % Raymond Carver, Bullwinkle and Rocky
 
 \begin{frame}
 \begin{center}
-{\Huge What do we talk about \\ [15pt] when they talk about X?} 
+{\Huge what do we talk about \\ [15pt] when they talk about X?} 
 \end{center}
 \hfill Apologies: Raymond Carver \\
 \end{frame}
 
-\begin{frame}\frametitle{Disqus Tree Structures}
-\begin{center}
-{\Huge articles $\leftarrow$ comments \\ [20 pt] comments $\leftarrow$ comments}
-\end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Disqus Threads}
+\begin{frame}\frametitle{Disqus threads and topics}
 \begin{center}
 {\Large 
 \begin{enumerate}
-\item 7 weeks
+\item 7 weeks data
 \item Key words: ``texting,'' ``driving'' and variants
-\item Select top threads based on mentions
-\item 61,406 comments from 365 threads
+\item Select top threads based on mentions 61,406 comments from 365 threads
+\item Select comments based on mentions 32,856 comments from 16,886 threads
+\item LSI: 500 features $\rightarrow$ 80 features; ~80 clusters
 \end{enumerate}
 }
 \end{center}
 \end{frame}
 
-\begin{frame}\frametitle{Disqus Topic Model Approach}
-\begin{center}
-{\Large 
-\begin{enumerate}
-\item Find comments that mention key words
-\item Corpus of comments (across many threads)
-\item tf-idf matrix: terms $\times$ comments
-\item LSI (rotate space to align with ``important'' dimensions, cut dimensions)
-\item K-means (quick-and-dirty clustering in reduced dimensional space)
-\item \ldots rinse and repeat (looking for distinction and cohesion)
-\end{enumerate}
-}
-\end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Disqus Topic Model}
-\begin{center}
-{\Large 
-\begin{enumerate}
-\item Same 7 weeks; same keywords
-\item 32,856 comments from 16,886 threads
-\item LSI: 500 features $\rightarrow$ 80 features
-\item K-means: 80 clusters as topics (?!)
-\end{enumerate}
-}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-{\Huge Focus on the intersection of \\[15 pt] Thread and Topic models}
-\end{center}
-\end{frame}
-
-%\begin{frame}\frametitle{Comments with key words over time}
-%  \begin{center}
-%    \includegraphics[width=9.5cm]{./imgs/time.pdf}
-%  \end{center}
-%\end{frame}
-
-\begin{frame}\frametitle{Disqus Thread Activity over Time}
+\begin{frame}\frametitle{Thread activity}
   \begin{center}
     \includegraphics[width=9.5cm]{./imgs/DT_timebythread.pdf}
   \end{center}
 \end{frame}
 
-\begin{frame}\frametitle{Disqus Topics Activity over Time}
+\begin{frame}\frametitle{Topics activity}
   \begin{center}
     \includegraphics[width=9.5cm]{./imgs/DT_timebycluster.pdf}
   \end{center}
 \end{frame}
 
-\begin{frame}\frametitle{Dominant Topics $\times$ Threads?}
+\begin{frame}\frametitle{Topics $\times$ Threads}
   \begin{center}
     \includegraphics[width=9.5cm]{./imgs/DT_gg_heat.pdf}
   \end{center}
@@ -441,12 +437,102 @@ F_S(t) = Q(\alpha, 0, \frac{ t}{\beta})
 \end{center}
 \end{frame}
 
+
+%%%%%%%%
+\section{Synthesis}
+{
+\usebackgroundtemplate{\includegraphics[width=7cm]{./imgs/ink.jpg}}
+\begin{frame}
+\textcolor{black} {
+\hfill \Huge \insertsection}
+\end{frame}
+}
+
+\begin{frame}\frametitle{Hamas vs. Israel in Gaza 2012}
+  \begin{center}
+    \includegraphics[width=10.5cm]{./imgs/HI_minimal-all-daily.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{What's that leading spike?}
+  \begin{center}
+    \includegraphics[width=10.5cm]{./imgs/HI_minimal-leadup-pres-debate.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=11cm]{./imgs/HI_minimal-target-geo.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Key accounts use of media}
+  \begin{center}
+    \includegraphics[width=9cm]{./imgs/HI_minimal-media.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Conflict grows followers}
+  \begin{center}
+    \includegraphics[width=10.5cm]{./imgs/HI_minimal-followers.pdf}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}\frametitle{Engagement with key accounts}
+  \begin{center}
+    \includegraphics[width=8.5cm]{./imgs/HI_minimal-venns6.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Crossover engagement}
+  \begin{center}
+    \includegraphics[width=8.5cm]{./imgs/HI_minimal-venns8.pdf}
+  \end{center}
+\end{frame}
+
+%%%%%%%%
+\section{Mixing it up}
+{
+\usebackgroundtemplate{\includegraphics[width=7.5cm]{./imgs/ink.jpg}}
+\begin{frame}
+\textcolor{black} {
+\Huge \hfill \insertsection}
+\end{frame}
+}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=10cm]{./imgs/slide05.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=10cm]{./imgs/slide06.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=10cm]{./imgs/slide07.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}\frametitle{The Social Cocktail}
+    \includegraphics[width=10cm]{./imgs/slide15.jpg}
+  \end{center}
+\end{frame}
+
+% the end
+
 \begin{frame}
   \begin{center}
     {\Large Thank you!}  \\ [20pt]
     \includegraphics[width=3cm]{./imgs/logo.png} \\ [15pt]
     \begin{itemize}
-    \item Presentation, data, vis. code at: \url{http://github.com/DrSkippy27/Approach-to-Leveraging-Social-Data_2013}
+    \item Presentation at: \url{http://github.com/DrSkippy27/Approach-to-Leveraging-Social-Data_2013}
     \end{itemize}
   \end{center}
 \end{frame}
